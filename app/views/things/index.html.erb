@@ -2,6 +2,9 @@
   <div class="col-md-12">
     <h1>
       List of all things
+      <% if session.fetch(:user_id) != nil%>
+      <%=session.fetch(:user_id)%>
+      <%end%>
     </h1>
   </div>
 </div>
